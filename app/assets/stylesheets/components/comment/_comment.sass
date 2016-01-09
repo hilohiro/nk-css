@@ -1,5 +1,19 @@
 .comment
+  width: 100%
+  position: relative
+  padding-left: 152px
+  box-sizing: border-box
 .comment__author
+  position: absolute
+  left: 0
+  &::after
+    content: " "
+    display: block
+    margin-left: 26px
+    margin-top: 32px
+    border-top: 10px none
+    border-bottom: 10px none
+    border-left: 11px solid $teal-50
 .comment__author-image
   border-radius: 50%
   margin-bottom: 8px
