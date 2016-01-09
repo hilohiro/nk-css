@@ -1,9 +1,16 @@
 .articles__items
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
 .articles__item
   margin-bottom: 32px
+  flex-grow: 1
 .articles__item-image-container
   margin-bottom: 4px
+  position: relative
 .articles__item-image
+  width: 100%
 .articles__item-crerated-at
   background-color: $black-dark
   text-align: right
@@ -11,6 +18,10 @@
   padding-right: 8px
   color: $white
   font-size: 14px
+  position: absolute
+  left: 0
+  bottom: 0
+  right: 0
 .articles__item-title
   font-size: 18px
   font-weight: bold
