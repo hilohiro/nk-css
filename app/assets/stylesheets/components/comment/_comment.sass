@@ -6,14 +6,6 @@
 .comment__author
   position: absolute
   left: 0
-  &::after
-    content: " "
-    display: block
-    margin-left: 26px
-    margin-top: 32px
-    border-top: 10px none
-    border-bottom: 10px none
-    border-left: 11px solid $teal-50
 .comment__author-image
   border-radius: 50%
   margin-bottom: 8px
@@ -25,6 +17,17 @@
 .comment__body
   background-color: $teal-50
   padding: 18px 24px
+  position: relative
+  &::before
+    content: ""
+    display: block
+    position: absolute
+    margin: 0
+    left: -44px
+    top: 32px
+    border-style: solid
+    border-width: 10px 22px
+    border-color: transparent $teal-50 transparent transparent
   p
     font-size: 16px
     line-height: 1.6
